@@ -1,4 +1,4 @@
-Let Me Confluience That For You!
+Let Me Confluence That For You!
 =========================
 
 (Your jira server must be customised first for it to work properly)
