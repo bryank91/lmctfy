@@ -19,6 +19,8 @@
       button.setAttribute("onclick",redirectToLocation)
       button.setAttribute("style",glowyCSS)
 
+      $('.step4').fadeIn('slow');
+
       // return location.href = $('#search').attr('action') + '?' + $('#search').formSerialize();
     });
   };
