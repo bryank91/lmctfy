@@ -10,7 +10,16 @@
       left: $('#search_button').offset().left + 15
     }, 1000, function() {
       $('.step3').fadeIn('slow');
-      return location.href = $('#search').attr('action') + '?' + $('#search').formSerialize();
+      var button = document.getElementById("search_button");
+
+      var url = $('#search').attr('action') + '?' + $('#search').formSerialize();;
+      var redirectToLocation = "window.location.href=" + "'" + url + "'";
+      var glowyCSS = "-webkit-animation-name: greenPulse; -webkit-animation-duration: 2s; -webkit-animation-iteration-count: 1; -webkit-box-shadow: 0 0 18px #91bd09;";
+
+      button.setAttribute("onclick",redirectToLocation)
+      button.setAttribute("style",glowyCSS)
+
+      // return location.href = $('#search').attr('action') + '?' + $('#search').formSerialize();
     });
   };
 
