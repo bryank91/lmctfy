@@ -4,7 +4,8 @@ moveToButton = ->
   $('#fake_mouse').animate(
     top: $('#search_button').offset().top + 5,
     left: $('#search_button').offset().left + 15,
-    500, ->
+    1000, ->
+      $('.step3').fadeIn('slow')
       location.href = $('#search').attr('action') + '?' + $('#search').formSerialize()
   )
 
@@ -13,7 +14,7 @@ moveToText = ->
     top: $("#search_query").offset().top + $('#search_query').height() / 2,
     left: $("#search_query").offset().left,
     2000, ->
-      $("#search_query").focus()
+      $("#search_query").focus() 
   )
 
 moveToRandom = (str)->
@@ -22,7 +23,8 @@ moveToRandom = (str)->
     top:"+=5px",
     left:"+=10px",
     "fast", ->
-      autoInput(stemp, 0)
+      $('.step2').fadeIn('slow');
+      autoInput(stemp, 0)      
   )
 
 switchMouseCursor = ->
@@ -50,6 +52,7 @@ search_submitted = ->
 
 $(document).ready ->
   if wd = $.url().param 's'
+    $('.step1').fadeIn('slow');
     #access with a query
     $('.showOnHome').hide()
     $('.aui-page-panel-inner').show()
