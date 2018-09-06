@@ -1,53 +1,947 @@
 <!DOCTYPE html>
+<!-- saved from url=(0053)https://domain.atlassian.net/wiki/dosearchsite.action -->
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Let Me Jira That For You!</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
 
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <img id="fake_mouse" src="" style="display:none;position:absolute;z-index:1000;" />
-    <div class="container">
-      <div class="row">
-        <div class="offset4 span4">
-          <br/>
-          <br/>
-          <br/>
-          <div class="row">
-            Let Me Confluence That For You!
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Let Me Confluence That For You!</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+  <title>Search - Confluence</title>
+  <link rel="search" type="application/opensearchdescription+xml" href="https://domain.atlassian.net/wiki/opensearch/osd.action"
+    title="Confluence">
+
+  <!-- Styles -->
+  <script>
+    window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};window.WRM._unparsedErrors=window.WRM._unparsedErrors||{};
+    WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"/wiki\"";
+    WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-rest:curl.cross-origin-resources"]="false";
+    WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:atlassian-nps-plugin-resources.is-server-instance-data-provider"]="false";
+    WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:atlassian-nps-plugin-resources.nps-opted-out"]="false";
+    WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:atlassian-nps-plugin-resources.is-user-site-admin"]="false";
+    WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:icons-css-resources.iconsCssData"]="{}";
+    WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:blueprint-css-resources.iconsCssData"]="{}";
+    WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:dialog-options.data"]="{\"allJsVersion\":\"1.2.17\",\"dialogOptions\":{\"com.lucidchart.confluence.plugins.lucid-confluence__lucid-gliffy-page-conversion-menuitem\":{\"size\":\"large\",\"chrome\":true,\"header\":{\"value\":\"Convert Gliffy Diagrams\"}}},\"inlineDialogOptions\":{},\"dialogModules\":{\"confluence-chats-integration\":{\"delete-page-subscription-dialog\":{\"url\":\"/api/addon/redirect/delete-page-subscription-dialog?userKey={user.key}&spaceKey={space.key}\",\"cacheable\":false,\"options\":{},\"key\":\"delete-page-subscription-dialog\"},\"disable-slack-subscriptions-site-level-dialog\":{\"url\":\"/api/addon/redirect/disable-slack-subscriptions-site-level-dialog\",\"cacheable\":false,\"options\":{},\"key\":\"disable-slack-subscriptions-site-level-dialog\"},\"page-config-dialog\":{\"url\":\"/api/addon/redirect/page-config-dialog?userKey={user.key}&spaceKey={space.key}&contentId={content.id}&contentType={content.type}\",\"cacheable\":false,\"options\":{\"height\":\"470px\",\"chrome\":false,\"width\":\"570px\"},\"key\":\"page-config-dialog\"},\"create-space-subscription-dialog\":{\"url\":\"/api/addon/redirect/create-space-subscription-dialog?userKey={user.key}&spaceKey={space.key}\",\"cacheable\":false,\"options\":{},\"key\":\"create-space-subscription-dialog\"},\"edit-subscription-dialog\":{\"url\":\"/api/addon/redirect/edit-subscription-dialog?userKey={user.key}&spaceKey={space.key}\",\"cacheable\":false,\"options\":{},\"key\":\"edit-subscription-dialog\"},\"delete-space-subscription-dialog\":{\"url\":\"/api/addon/redirect/delete-space-subscription-dialog?userKey={user.key}&spaceKey={space.key}\",\"cacheable\":false,\"options\":{},\"key\":\"delete-space-subscription-dialog\"},\"disable-slack-subscriptions-space-dialog\":{\"url\":\"/api/addon/redirect/disable-slack-subscriptions-space-dialog?spaceKey={space.key}\",\"cacheable\":false,\"options\":{},\"key\":\"disable-slack-subscriptions-space-dialog\"}}}}";
+    WRM._unparsedData["com.atlassian.plugins.atlassian-connect-plugin:confluence-macro.property-panel-controls"]="{}";
+    WRM._unparsedData["com.atlassian.product.fabric.pf-jira-confluence-integration-plugin:app-switcher-initial-resources.cloud-id"]="\"8b955f56-db2c-4162-b2fc-68d914043c17\"";
+    WRM._unparsedData["com.atlassian.product.fabric.pf-jira-confluence-integration-plugin:app-switcher-initial-resources.is-anonymous"]="false";
+    WRM._unparsedData["com.atlassian.confluence.plugins.confluence-feature-discovery-plugin:confluence-feature-discovery-plugin-resources.test-mode"]="false";
+    WRM._unparsedData["com.atlassian.crowd.user-provisioning-vertigo-plugin:create-users-resources.isSiteAdmin"]="false";
+    if(window.WRM._dataArrived)window.WRM._dataArrived();
+  </script>
+  <link type="text/css" rel="stylesheet" href="./Search - Confluence_files/batch.css" data-wrm-key="_super"
+    data-wrm-batch-type="context" media="all">
+  <link type="text/css" rel="stylesheet" href="./Search - Confluence_files/batch(1).css" data-wrm-key="confluence-search,main,atl.general,-_super"
+    data-wrm-batch-type="context" media="all">
+  <link type="text/css" rel="stylesheet" href="./Search - Confluence_files/com.atlassian.auiplugin_aui-sidebar.css"
+    data-wrm-key="com.atlassian.auiplugin:aui-sidebar" data-wrm-batch-type="resource" media="all">
+
+
+  <!-- Dynamically generated colors styles -->
+  <link type="text/css" rel="stylesheet" href="./Search - Confluence_files/colors.css" media="all">
+
+
+
+  <style type="text/css">
+    #main,
+    #admin-content,
+    #custom-content-container,
+    .ap-servlet-placeholder {
+      opacity: 0
+    }
+
+    ;
+  </style>
+  <script charset="utf-8" src="./Search - Confluence_files/store-subscriptions.340515381f1249c7de55-v33.js"></script>
+  <style data-styled-components=""></style>
+  <style type="text/css">
+    #main,
+    #admin-content,
+    #custom-content-container,
+    .ap-servlet-placeholder {
+      opacity: 0
+    }
+
+    ;
+  </style>
+  <script charset="utf-8" src="./Search - Confluence_files/en.03de34c3fc9829e0a16b-v33.js"></script>
+  <script charset="utf-8" src="./Search - Confluence_files/184.62290cb77092c503feaf-v33.js"></script>
+  <script charset="utf-8" src="./Search - Confluence_files/5.36cf868d3fc97b9ef59c-v33.js"></script>
+  <script charset="utf-8" src="./Search - Confluence_files/40.f224c3276abed86650e3-v33.js"></script>
+  <style type="text/css" id="sO2+u-0">
+    @media print {
+      .ConfluenceNavigation_container_38S {
+        display: none !important
+      }
+    }
+  </style>
+  <script charset="utf-8" src="./Search - Confluence_files/1.2944aabf03c58c3744c9-v33.js"></script>
+  <script charset="utf-8" src="./Search - Confluence_files/0.127fb848a1150ff57a93-v33.js"></script>
+  <script charset="utf-8" src="./Search - Confluence_files/vendors_admin-navigation_dashboard.container_dashboard.saved-for-later_fullpage.editor.container_ful_341798ca.a814f0a85ce92ca06214-v33.js"></script>
+  <script charset="utf-8" src="./Search - Confluence_files/global-navigation.744110ca9ee3659582d3-v33.js"></script>
+  <style type="text/css" id="swId0-0">
+    .GlobalNavigation_groupTitle_BTY {
+      color: #fff;
+      opacity: .77;
+      margin-left: 13px
+    }
+  </style>
+  <style type="text/css" id="suSuh-0">
+    .CommonPageNavigation_alwaysOnTop_3EI {
+      z-index: 1
+    }
+
+    .aui-inline-dialog {
+      z-index: 400
+    }
+
+    .cp-container[role=dialog] {
+      z-index: 350
+    }
+
+    body #inline-dialog-sharePreviewPopup {
+      z-index: 360
+    }
+
+    .ap-servlet-placeholder {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto
+    }
+
+    .hidden-notification-indicator {
+      display: none
+    }
+
+    a:hover {
+      text-decoration: none
+    }
+
+    .CommonPageNavigation_rel_3mk {
+      position: relative
+    }
+
+    .CommonPageNavigation_collapse-container_2KE {
+      position: absolute;
+      right: 0
+    }
+
+    .CommonPageNavigation_sidebar-toggle_3Ma {
+      margin: 0 auto;
+      position: absolute;
+      right: -47px;
+      top: 20px;
+      width: 48px;
+      min-width: 48px;
+      height: 48px;
+      cursor: pointer;
+      -webkit-transition: all .3s cubic-bezier(.2, 0, 0, 1), opacity .3s cubic-bezier(.15, 1, .3, 1) .2s, -webkit-transform .3s cubic-bezier(.2, 0, 0, 1) .2s;
+      transition: all .3s cubic-bezier(.2, 0, 0, 1), opacity .3s cubic-bezier(.15, 1, .3, 1) .2s, -webkit-transform .3s cubic-bezier(.2, 0, 0, 1) .2s;
+      transition: all .3s cubic-bezier(.2, 0, 0, 1), opacity .3s cubic-bezier(.15, 1, .3, 1) .2s, transform .3s cubic-bezier(.2, 0, 0, 1) .2s;
+      transition: all .3s cubic-bezier(.2, 0, 0, 1), opacity .3s cubic-bezier(.15, 1, .3, 1) .2s, transform .3s cubic-bezier(.2, 0, 0, 1) .2s, -webkit-transform .3s cubic-bezier(.2, 0, 0, 1) .2s;
+      z-index: 10;
+      padding: 12px
+    }
+
+    .CommonPageNavigation_sidebar-toggle_3Ma,
+    .CommonPageNavigation_sidebar-toggle_3Ma:hover {
+      background-color: transparent;
+      outline: none;
+      border: 0 transparent
+    }
+
+    .CommonPageNavigation_sidebar-toggle_3Ma:hover .CommonPageNavigation_sidebar-toggle-bg_1mJ {
+      opacity: 1
+    }
+
+    .CommonPageNavigation_sidebar-toggle_3Ma:hover:hover:after,
+    .CommonPageNavigation_sidebar-toggle_3Ma:hover:hover:before {
+      background-color: #fff
+    }
+
+    .CommonPageNavigation_sidebar-toggle_3Ma:hover+.CommonPageNavigation_sidebarHighlight_1Nx {
+      background: #4c9aff
+    }
+
+    .CommonPageNavigation_sidebar-toggle_3Ma:active {
+      background-color: transparent;
+      outline: none;
+      border: 0 transparent
+    }
+
+    .CommonPageNavigation_sidebar-toggle_3Ma .CommonPageNavigation_sidebar-toggle-bg_1mJ {
+      width: 24px;
+      min-width: 24px;
+      border-radius: 100%;
+      background-color: #2684ff;
+      opacity: 0;
+      height: 24px;
+      z-index: 200;
+      -webkit-box-shadow: 0 4px 8px -2px rgba(23, 43, 77, .32), 0 0 1px rgba(23, 43, 77, .25);
+      box-shadow: 0 4px 8px -2px rgba(23, 43, 77, .32), 0 0 1px rgba(23, 43, 77, .25);
+      -webkit-transition: all .3s cubic-bezier(.2, 0, 0, 1);
+      transition: all .3s cubic-bezier(.2, 0, 0, 1)
+    }
+
+    .CommonPageNavigation_sidebar-toggle_3Ma:after,
+    .CommonPageNavigation_sidebar-toggle_3Ma:before {
+      background-color: #97a0af;
+      content: "";
+      width: 2px;
+      border-radius: 2px;
+      position: absolute;
+      left: 21px;
+      top: 17px;
+      z-index: 201;
+      height: 8px;
+      -webkit-transform-origin: 1px 7px;
+      transform-origin: 1px 7px;
+      -webkit-transition: all .2s ease-in-out, background 0s;
+      transition: all .2s ease-in-out, background 0s;
+      -webkit-transform: rotate(40deg);
+      transform: rotate(40deg)
+    }
+
+    .CommonPageNavigation_sidebar-toggle_3Ma:after {
+      top: 23px;
+      -webkit-transform-origin: 1px 1px;
+      transform-origin: 1px 1px;
+      -webkit-transform: rotate(-40deg);
+      transform: rotate(-40deg)
+    }
+
+    .CommonPageNavigation_sidebar-toggle_3Ma:hover .CommonPageNavigation_sidebar-toggle-bg_1mJ {
+      background-color: #4c9aff
+    }
+
+    .CommonPageNavigation_sidebar-toggle_3Ma:active .CommonPageNavigation_sidebar-toggle-bg_1mJ {
+      background-color: #0065ff
+    }
+
+    [data-sidebar-collapsed=true] .CommonPageNavigation_sidebar-toggle_3Ma:after {
+      background-color: #97a0af;
+      -webkit-transform: rotate(40deg);
+      transform: rotate(40deg);
+      left: 26px
+    }
+
+    [data-sidebar-collapsed=true] .CommonPageNavigation_sidebar-toggle_3Ma:before {
+      background-color: #97a0af;
+      -webkit-transform: rotate(-40deg);
+      transform: rotate(-40deg);
+      left: 26px
+    }
+
+    .CommonPageNavigation_sidebarHighlight_1Nx {
+      position: absolute;
+      top: 0;
+      right: -1px;
+      height: 100vh;
+      pointer-events: none;
+      width: 2px;
+      -webkit-transition: background-color .3s ease-in-out .2s;
+      transition: background-color .3s ease-in-out .2s;
+      z-index: 301
+    }
+
+    #admin-content,
+    .aui-page-panel,
+    .pagecontent {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto
+    }
+  </style>
+  <style type="text/css" id="sAksT-0">
+    .GlobalHomeItem_homeIconWrapper_21N {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 24px;
+      height: 24px
+    }
+
+    .GlobalHomeItem_homeNotificationBadge_bk7 {
+      position: absolute;
+      top: -5px;
+      right: -7px;
+      -webkit-transform: scale(.95);
+      transform: scale(.95)
+    }
+  </style>
+  <style type="text/css" id="sSd/I-0">
+    .AppSwitcher_root_2lO a[data-role=droplistItem] {
+      text-decoration: none;
+      color: #172b4d
+    }
+
+    .AppSwitcher_root_2lO a[data-role=droplistItem]:active,
+    .AppSwitcher_root_2lO a[data-role=droplistItem]:visited {
+      color: #172b4d
+    }
+  </style>
+  <style type="text/css" id="sVXPT-0">
+    .AppSwitcherInviteUsersExperiment_inviteTeamIconWrapper_15D {
+      margin-top: -2px
+    }
+  </style>
+  <style type="text/css" id="sTQYQ-0">
+    .WebItemDropdownMenu_root_Rr2 a[data-role=droplistItem] {
+      text-decoration: none;
+      color: #172b4d
+    }
+
+    .WebItemDropdownMenu_root_Rr2 a[data-role=droplistItem]:active,
+    .WebItemDropdownMenu_root_Rr2 a[data-role=droplistItem]:visited {
+      color: #172b4d
+    }
+
+    .WebItemDropdownMenu_root_Rr2 a[data-role=droplistItem]>span:first-child {
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1
+    }
+
+    .WebItemDropdownMenu_rightIcon_3g- {
+      color: #7a869a
+    }
+  </style>
+  <style type="text/css" id="s8Z4W-0">
+    .SiteLogo_SiteLogo_1eB {
+      margin: 12px 6px 8px;
+      height: 32px;
+      width: 184px
+    }
+
+    .SiteLogo_siteLogoImage_2PR {
+      max-height: 32px;
+      max-width: 184px
+    }
+  </style>
+  <style type="text/css" id="s0/Bm-0">
+    .SiteTitle_title_3ya {
+      margin-left: 8px;
+      margin-top: -5px;
+      color: #fff;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis
+    }
+  </style>
+  <style type="text/css" id="sApmr-0">
+    .MenuItem_item_1es .MenuItem_next_3AX {
+      padding: 2px 0 0;
+      position: absolute;
+      right: 0;
+      -webkit-transition: opacity .2s;
+      transition: opacity .2s;
+      opacity: 0
+    }
+
+    .MenuItem_item_1es:hover .MenuItem_next_3AX {
+      opacity: 1
+    }
+
+    .MenuItem_label_26t {
+      position: relative;
+      text-overflow: ellipsis;
+      overflow: hidden
+    }
+
+    .MenuItem_link_a4a span:first-child>span:nth-child(3) {
+      margin: 0 -10px 0 0
+    }
+
+    .MenuItem_link_a4a .MenuItem_hiddenAction_3H9 {
+      display: none;
+      -webkit-transition: opacity .2s;
+      transition: opacity .2s;
+      opacity: 0
+    }
+
+    .MenuItem_link_a4a:hover {
+      text-decoration: none
+    }
+
+    .MenuItem_link_a4a:hover .MenuItem_hiddenAction_3H9 {
+      display: block;
+      opacity: 1
+    }
+
+    .MenuItem_link_a4a:focus {
+      outline: none
+    }
+
+    .MenuItem_link_a4a.MenuItem_global_3Uw {
+      text-decoration: none;
+      color: inherit
+    }
+
+    .MenuItem_link_a4a.MenuItem_container_2RS {
+      color: #42526e;
+      text-decoration: none
+    }
+
+    .MenuItem_link_a4a.MenuItem_container_2RS:hover {
+      color: #42526e
+    }
+
+    .MenuItem_link_a4a.MenuItem_container_2RS:active {
+      color: #deebff
+    }
+
+    .MenuItem_link_a4a.MenuItem_isSidebarCollapsed_1Zh span {
+      margin-right: 0
+    }
+  </style>
+  <style type="text/css" id="soZ2V-0">
+    .ExternalDrawer_externalDrawerContent_4yL {
+      border: 0;
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      width: 100%
+    }
+
+    .ExternalDrawer_spinnerWrapper_2dC {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      position: relative;
+      top: 11.25rem
+    }
+  </style>
+</head>
+
+
+
+<body id="com-atlassian-confluence" class="theme-default   aui-layout aui-theme-default" data-aui-version="6.1.0" style="background-color: rgb(255, 255, 255);">
+  <script>
+    var __INITIAL_STATE__ = typeof __INITIAL_STATE__ !== 'undefined' ? __INITIAL_STATE__ : { i18n: { locale: 'en-GB', messages: {} } };
+    </script>
+  <div style="display:flex;">
+    <div id="ui-global-sidebar-section" slot="navigation" style="z-index: 2">
+      <div>
+        <div class="ConfluenceNavigation_container_38S">
+          <div id="confluence-left-nav" class="CommonPageNavigation_alwaysOnTop_3EI nps-dialog-target"
+            data-sidebar-collapsed="false">
+            <div>
+              <div class="sc-bYSBpT eOzTFu" style="width: 304px;">
+                <div class="sc-iELTvK grLwmp">
+                  <div class="sc-cmTdod iEwfHX">
+                    <div class="sc-jnlKLf bGWvvA">
+                      <div class="sc-fYxtnH giGQZN">
+                        <div class="sc-uJMKN hmVqXs">
+                          <div class="sc-bbmXgH kecaLq">
+                            <div class="sc-dBAPYN jdxCmT"><span id="logo" class="confluence-nav-primary-icon-link">
+                                <style>.confluence-nav-primary-icon-link a { color: inherit !important; }</style>
+                                <style>.confluence-nav-primary-icon-link a div{ display: flex }</style><a href="https://domain.atlassian.net/wiki"
+                                  class="">
+                                  <div><span class="sc-ipXKqB gBqFPM" aria-label="Confluence"><svg width="24" height="24"
+                                        viewBox="0 0 24 24" focusable="false" role="presentation">
+                                        <defs>
+                                          <lineargradient x1="99.14%" y1="112.745%" x2="35.185%" y2="39.29%" id="a-30ed1269-4866-4b4c-897a-e4d9f62b25fd">
+                                            <stop stop-color="inherit" stop-opacity=".4" offset="0%"></stop>
+                                            <stop stop-color="inherit" offset="100%"></stop>
+                                          </lineargradient>
+                                          <lineargradient x1="14.184%" y1="5.8%" x2="60.198%" y2="69.657%" id="b-30ed1269-4866-4b4c-897a-e4d9f62b25fd">
+                                            <stop stop-color="inherit" stop-opacity=".4" offset="0%"></stop>
+                                            <stop stop-color="inherit" offset="100%"></stop>
+                                          </lineargradient>
+                                        </defs>
+                                        <path d="M4.808 16.017c-.163.265-.345.573-.5.818a.5.5 0 0 0 .167.68l3.25 2a.5.5 0 0 0 .693-.17c.13-.217.297-.5.48-.802 1.287-2.125 2.582-1.866 4.917-.75l3.223 1.532a.5.5 0 0 0 .672-.25l1.547-3.5a.5.5 0 0 0-.25-.655c-.68-.32-2.032-.957-3.25-1.545-4.38-2.125-8.102-1.985-10.95 2.642z"
+                                          fill="url(#a-30ed1269-4866-4b4c-897a-e4d9f62b25fd)"></path>
+                                        <path d="M19.38 8.078c.163-.265.345-.573.5-.818a.5.5 0 0 0-.168-.68l-3.25-2a.5.5 0 0 0-.712.17c-.13.218-.297.5-.48.803-1.287 2.125-2.582 1.865-4.918.75L7.14 4.772a.5.5 0 0 0-.672.25l-1.548 3.5a.5.5 0 0 0 .25.655c.68.32 2.032.957 3.25 1.544 4.39 2.123 8.112 1.983 10.96-2.644z"
+                                          fill="url(#b-30ed1269-4866-4b4c-897a-e4d9f62b25fd)"></path>
+                                      </svg></span></div>
+                                </a>
+                              </span></div>
+                          </div>
+                          <div class="sc-gGBfsJ hDAjr">
+                            <div>
+                              <div>
+                                <div><button class="sc-dNLxif dAGsbY" type="button">
+                                    <div class="global-search-icon"><span class="sc-ipXKqB fBEJMB" aria-label="Search"><svg
+                                          width="24" height="24" viewBox="0 0 24 24" focusable="false" role="presentation">
+                                          <path d="M16.436 15.085l3.94 4.01a1 1 0 0 1-1.425 1.402l-3.938-4.006a7.5 7.5 0 1 1 1.423-1.406zM10.5 16a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11z"
+                                            fill="currentColor" fill-rule="evenodd"></path>
+                                        </svg></span></div>
+                                  </button></div>
+                              </div>
+                              <div>
+                                <div><button class="sc-dNLxif dAGsbY" type="button">
+                                    <div id="create-page-button"><span class="sc-ipXKqB fBEJMB" aria-label="Create"><svg
+                                          width="24" height="24" viewBox="0 0 24 24" focusable="false" role="presentation">
+                                          <path d="M13 11V3.993A.997.997 0 0 0 12 3c-.556 0-1 .445-1 .993V11H3.993A.997.997 0 0 0 3 12c0 .557.445 1 .993 1H11v7.007c0 .548.448.993 1 .993.556 0 1-.445 1-.993V13h7.007A.997.997 0 0 0 21 12c0-.556-.445-1-.993-1H13z"
+                                            fill="currentColor" fill-rule="evenodd"></path>
+                                        </svg></span></div>
+                                  </button></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="sc-tilXH iamvuF">
+                        <div>
+                          <div>
+                            <div><a class="sc-kxynE kJPtuk" href="https://domain.atlassian.net/home?src=globalnav&amp;ref=confluence"
+                                target="_blank">
+                                <div>
+                                  <div class="GlobalHomeItem_homeIconWrapper_21N"><span class="sc-LKuAh dRgTqp"
+                                      aria-label="Notifications"><span class="sc-ipXKqB fBEJMB"><svg width="24" height="24"
+                                          viewBox="0 0 24 24" focusable="false" role="presentation">
+                                          <path d="M6.485 17.669a2 2 0 0 0 2.829 0l-2.829-2.83a2 2 0 0 0 0 2.83zm4.897-12.191l-.725.725c-.782.782-2.21 1.813-3.206 2.311l-3.017 1.509c-.495.248-.584.774-.187 1.171l8.556 8.556c.398.396.922.313 1.171-.188l1.51-3.016c.494-.988 1.526-2.42 2.311-3.206l.725-.726a5.048 5.048 0 0 0 .64-6.356 1.01 1.01 0 1 0-1.354-1.494c-.023.025-.046.049-.066.075a5.043 5.043 0 0 0-2.788-.84 5.036 5.036 0 0 0-3.57 1.478z"
+                                            fill="currentColor" fill-rule="evenodd"></path>
+                                        </svg></span></span></div>
+                                  <div class="GlobalHomeItem_homeNotificationBadge_bk7"><span class="sc-kaNhvL gpYDXm">9+</span></div>
+                                </div>
+                              </a></div>
+                          </div>
+                          <div>
+                            <div><span class="sc-bYnzgO icffud">
+                                <div>
+                                  <div class="sc-erNlkL htAyWh">
+                                    <div>
+                                      <div>
+                                        <div class="sc-kEmuub iyNfhk">
+                                          <div><button class="sc-dNLxif dtmCNj" type="button"><span class="sc-ipXKqB fBEJMB"
+                                                aria-label="Application Switcher"><svg width="24" height="24" viewBox="0 0 24 24"
+                                                  focusable="false" role="presentation">
+                                                  <path fill="currentColor" fill-rule="evenodd" d="M4 5.01C4 4.451 4.443 4 5.01 4h1.98C7.549 4 8 4.443 8 5.01v1.98C8 7.549 7.557 8 6.99 8H5.01C4.451 8 4 7.557 4 6.99V5.01zm0 6c0-.558.443-1.01 1.01-1.01h1.98c.558 0 1.01.443 1.01 1.01v1.98C8 13.549 7.557 14 6.99 14H5.01C4.451 14 4 13.557 4 12.99v-1.98zm6-6c0-.558.443-1.01 1.01-1.01h1.98c.558 0 1.01.443 1.01 1.01v1.98C14 7.549 13.557 8 12.99 8h-1.98C10.451 8 10 7.557 10 6.99V5.01zm0 6c0-.558.443-1.01 1.01-1.01h1.98c.558 0 1.01.443 1.01 1.01v1.98c0 .558-.443 1.01-1.01 1.01h-1.98c-.558 0-1.01-.443-1.01-1.01v-1.98zm6-6c0-.558.443-1.01 1.01-1.01h1.98c.558 0 1.01.443 1.01 1.01v1.98C20 7.549 19.557 8 18.99 8h-1.98C16.451 8 16 7.557 16 6.99V5.01zm0 6c0-.558.443-1.01 1.01-1.01h1.98c.558 0 1.01.443 1.01 1.01v1.98c0 .558-.443 1.01-1.01 1.01h-1.98c-.558 0-1.01-.443-1.01-1.01v-1.98zm-12 6c0-.558.443-1.01 1.01-1.01h1.98c.558 0 1.01.443 1.01 1.01v1.98C8 19.549 7.557 20 6.99 20H5.01C4.451 20 4 19.557 4 18.99v-1.98zm6 0c0-.558.443-1.01 1.01-1.01h1.98c.558 0 1.01.443 1.01 1.01v1.98c0 .558-.443 1.01-1.01 1.01h-1.98c-.558 0-1.01-.443-1.01-1.01v-1.98zm6 0c0-.558.443-1.01 1.01-1.01h1.98c.558 0 1.01.443 1.01 1.01v1.98c0 .558-.443 1.01-1.01 1.01h-1.98c-.558 0-1.01-.443-1.01-1.01v-1.98z"></path>
+                                                </svg></span></button></div>
+                                        </div>
+                                      </div>
+                                      <div class="sc-lnmtFM eCvwUQ">
+                                        <div style="height: 100%; width: 100%;"></div>
+                                      </div>
+                                      <div class="sc-hwcHae jEsWVd">
+                                        <div style="top: 0px; left: 0px; position: absolute; z-index: 400; opacity: 0;"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </span></div>
+                          </div>
+                          <div>
+                            <div class="WebItemDropdownMenu_root_Rr2" data-webitem-location="system.help/pages">
+                              <div>
+                                <div class="sc-sdtwF fmUGBx">
+                                  <div>
+                                    <div>
+                                      <div class="sc-cTjmhe jvzAON">
+                                        <div>
+                                          <div id="help-menu-link" class="">
+                                            <div><button class="sc-dNLxif dtmCNj" type="button"><span class="sc-ipXKqB hOAKui"
+                                                  aria-label="Help"><svg width="24" height="24" viewBox="0 0 24 24"
+                                                    focusable="false" role="presentation">
+                                                    <g fill-rule="evenodd">
+                                                      <circle fill="currentColor" cx="12" cy="12" r="10"></circle>
+                                                      <circle fill="inherit" cx="12" cy="18" r="1"></circle>
+                                                      <path d="M15.89 9.05a3.975 3.975 0 0 0-2.957-2.942C10.321 5.514 8.017 7.446 8 9.95l.005.147a.992.992 0 0 0 .982.904c.552 0 1-.447 1.002-.998a2.004 2.004 0 0 1 4.007-.002c0 1.102-.898 2-2.003 2H12a1 1 0 0 0-1 .987v2.014a1.001 1.001 0 0 0 2.004 0v-.782c0-.217.145-.399.35-.472A3.99 3.99 0 0 0 15.89 9.05"
+                                                        fill="inherit"></path>
+                                                    </g>
+                                                  </svg></span></button></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="sc-hBbWxd eiXIVq">
+                                      <div style="height: 100%; width: 100%;"></div>
+                                    </div>
+                                    <div class="sc-cqpYsc kxKeKi">
+                                      <div style="top: 0px; left: 0px; position: absolute; z-index: 400; opacity: 0;"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="WebItemDropdownMenu_root_Rr2" data-webitem-location="system.user">
+                              <div>
+                                <div class="sc-sdtwF fmUGBx">
+                                  <div>
+                                    <div>
+                                      <div class="sc-cTjmhe jvzAON">
+                                        <div>
+                                          <div><button class="sc-dNLxif dtmCNj" type="button"><img src="./Search - Confluence_files/324243678294d856e9c427bb25318d05"
+                                                style="width: 24px; height: 24px; border-radius: 50%;"></button></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="sc-hBbWxd eiXIVq">
+                                      <div style="height: 100%; width: 100%;"></div>
+                                    </div>
+                                    <div class="sc-cqpYsc kxKeKi">
+                                      <div style="top: 0px; left: 0px; position: absolute; z-index: 400; opacity: 0;"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sc-jwKygS gGeWZU">
+                    <div class="sc-feJyhm hmCCvu">
+                      <div class="sc-kafWEX hFADNY"></div>
+                      <div class="sc-hEsumM cBSZNu">
+                        <div>
+                          <div class="SiteLogo_SiteLogo_1eB"><a href="https://domain.atlassian.net/wiki" class=""><img
+                                src="./Search - Confluence_files/atl.site.logo" class="SiteLogo_siteLogoImage_2PR"
+                                title="Confluence"></a></div>
+                        </div>
+                      </div>
+                      <div class="sc-ktHwxA jsDPag">
+                        <div class="sc-cIShpX ebueBW">
+                          <div aria-label="" role="group"><a href="https://domain.atlassian.net/wiki/spaces/DOM/overview?mode=global"
+                              class="MenuItem_link_a4a MenuItem_global_3Uw" target="" tabindex="-1"><span class="sc-jHZirH eQysAb"
+                                aria-disabled="false" tabindex="0"><span class="sc-kgAjT jFHonz sc-TOsTZ cVMnyp">
+                                  <div class="sc-hwwEjo gdxXgy"><span class="sc-ipXKqB fBEJMB" aria-label="Domain Home"><svg
+                                        width="24" height="24" viewBox="0 0 24 24" focusable="false" role="presentation">
+                                        <path d="M8.01 18c.546 0 .99-.444.99-1a1 1 0 0 0-.99-1H3.99A.993.993 0 0 0 3 17a1 1 0 0 0 .99 1h4.02zM3 7c0 .552.445 1 .993 1h16.014A.994.994 0 0 0 21 7c0-.552-.445-1-.993-1H3.993A.994.994 0 0 0 3 7zm10.998 6A.999.999 0 0 0 15 12c0-.552-.456-1-1.002-1H4.002A.999.999 0 0 0 3 12c0 .552.456 1 1.002 1h9.996z"
+                                          fill="currentColor" fill-rule="evenodd"></path>
+                                      </svg></span></div>
+                                </span><span class="sc-ksYbfQ kcnHgr"><span class="sc-hmzhuo bAbFWa">Domain
+                                    Home</span></span></span></a><a href="https://domain.atlassian.net/wiki/discover"
+                              class="MenuItem_link_a4a MenuItem_global_3Uw" target="" tabindex="-1"><span class="sc-dXfzlN cKdPjH"
+                                aria-disabled="false" tabindex="0"><span class="sc-kgAjT jFHonz sc-TOsTZ cVMnyp">
+                                  <div class="sc-hwwEjo gdxXgy"><span class="sc-ipXKqB fBEJMB" aria-label="Activity"><svg
+                                        width="24" height="24" viewBox="0 0 24 24" focusable="false" role="presentation">
+                                        <g fill="currentColor" fill-rule="evenodd">
+                                          <path d="M12 19a7 7 0 1 0 0-14 7 7 0 0 0 0 14zm0 2a9 9 0 1 1 0-18 9 9 0 0 1 0 18z"
+                                            fill-rule="nonzero"></path>
+                                          <path d="M10.86 10.186l3.896-1.948c1.11-.555 1.562-.108 1.005 1.006l-1.948 3.896c-.126.251-.426.55-.673.673l-3.897 1.948c-1.11.556-1.561.11-1.004-1.006l1.947-3.896c.126-.25.426-.55.673-.673zM12 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
+                                        </g>
+                                      </svg></span></div>
+                                </span><span class="sc-ksYbfQ kcnHgr"><span class="sc-hmzhuo bAbFWa">Activity</span></span></span></a><span><a
+                                href="https://domain.atlassian.net/wiki/my" class="MenuItem_link_a4a MenuItem_global_3Uw"
+                                target="" tabindex="-1"><span class="sc-aewfc emaSLX" aria-disabled="false" tabindex="0"><span
+                                    class="sc-kgAjT jFHonz sc-TOsTZ cVMnyp">
+                                    <div class="sc-hwwEjo gdxXgy"><span class="sc-ipXKqB fBEJMB" aria-label="Your work"><svg
+                                          width="24" height="24" viewBox="0 0 24 24" focusable="false" role="presentation">
+                                          <g fill="currentColor" fill-rule="evenodd">
+                                            <path d="M5 19h14V5H5v14zM3 4.995C3 3.893 3.893 3 4.995 3h14.01C20.107 3 21 3.893 21 4.995v14.01A1.995 1.995 0 0 1 19.005 21H4.995A1.995 1.995 0 0 1 3 19.005V4.995z"
+                                              fill-rule="nonzero"></path>
+                                            <path d="M9.17 17H4v1.5A1.5 1.5 0 0 0 5.505 20h12.99c.838 0 1.505-.672 1.505-1.5V17h-5.17a3.001 3.001 0 0 1-5.66 0zM7 12h10v2H7zm0-4h10v2H7z"></path>
+                                          </g>
+                                        </svg></span></div>
+                                  </span><span class="sc-ksYbfQ kcnHgr"><span class="sc-hmzhuo bAbFWa">Your
+                                      work</span></span></span></a></span>
+                            <div data-webitem-location="system.header/left"><a href="https://domain.atlassian.net/wiki/spacedirectory/view.action"
+                                class="MenuItem_link_a4a MenuItem_global_3Uw" target="" tabindex="-1"><span class="sc-dKEPtC LSrFk"
+                                  aria-disabled="false" tabindex="0"><span class="sc-kgAjT jFHonz sc-TOsTZ cVMnyp">
+                                    <div class="sc-hwwEjo gdxXgy"><span class="sc-ipXKqB fBEJMB" aria-label="Spaces"><svg
+                                          width="24" height="24" viewBox="0 0 24 24" focusable="false" role="presentation">
+                                          <path d="M12.2 6h7.81C21.108 6 22 6.893 22 7.992v11.016c0 1.1-.898 1.992-1.99 1.992H3.99A1.992 1.992 0 0 1 2 19.008V5.006C2 3.898 2.896 3 3.997 3h5.006c1.103 0 2.327.826 2.742 1.862L12.2 6z"
+                                            fill="currentColor" fill-rule="evenodd"></path>
+                                        </svg></span></div>
+                                  </span><span class="sc-ksYbfQ kcnHgr"><span class="sc-hmzhuo bAbFWa">Spaces</span></span></span></a></div>
+                            <div data-webitem-location="system.header/left"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="sc-tilXH iamvuF">
+                        <div class="sc-kafWEX hFADNY"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sc-btzYZH jZEYwJ"><button class="sc-lhVmIH hXVvYU" aria-expanded="true"></button></div>
+                </div>
+              </div>
+              <div>
+                <div class="sc-eerKOB GBjY"></div>
+              </div>
+              <div>
+                <div class="sc-eerKOB GBjY"></div>
+              </div>
+            </div>
+            <div data-webitem-location="system.header/left.button.group"></div>
           </div>
+          <style>
+            /* Applies to global "ADG3" font families. */
+        body, body.aui-layout { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Noto Sans", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif; }
 
-          <div class="row">
-            <form id="search" action="https://domain.atlassian.net/wiki/dosearchsite.action" class="input-append">
-              <input type="text" name="queryString" id="search_query"  autocomplete="off">
-              <button id="search_button" class="btn" type="button">Go!</button>
+        /* Resets the background colors to white (which were previously set to gray by AUI */
+        body { background-color:transparent; }
+        div#full-height-container { background-color:transparent; }
 
-              <h5 id="search_url" style="text-decoration:underline;"></h5>
-            </form>
-          </div>
+        body .aui-page-panel { border:none; position:inherit; margin:0; }
+
+        /* Make the header transparent on legacy pages that contain the ADG3 sidebar. */
+        body #main-header { background-color:transparent !important; }
+
+        /* Make the secondary navigation on legacy pages look slightly nicer. This should be replaced with an AtlasKit component eventually. */
+        body .aui-navgroup-horizontal { background-color: transparent; margin:0 0 24px 0; border-top:none; }
+        body .aui-navgroup-horizontal .aui-nav a { color: #333; }
+        body .aui-navgroup-horizontal .aui-nav a:hover { background-color:transparent; text-decoration:underline; }
+        body .aui-navgroup-horizontal .aui-nav > .aui-nav-selected a { border-bottom:3px solid #205081; }
+        body .aui-navgroup-horizontal .aui-nav > .aui-nav-selected a:before,
+        body .aui-navgroup-horizontal .aui-nav > .aui-nav-selected a:after { border:none; }
+        </style>
         </div>
       </div>
+      <div></div>
     </div>
-    <script src="js/plugins.js"></script>
-    <script src="//code.jquery.com/jquery-2.0.0.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
-    <script src="js/vendor/jquery.form.js"></script>
-    <script src="js/vendor/underscore.string.min.js"></script>
-    <script src="js/vendor/purl.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <div style="flex-flow: row wrap; width: 100%">
+      <div style="flex: 1 100%">
 
-      ga('create', 'UA-11272987-5', 'bboudreau.ca');
-      ga('send', 'pageview');
 
-    </script>
-  </body>
+
+      </div>
+      <!-- START-FRAGMENT standalone-navigation.html -->
+      <!-- 0.0.15-3553 -->
+      <script type="text/javascript">
+        (function () {
+          // This changes the background to white for ADG3 because AUI sets it to gray. This avoids a flash of gray
+          // while loading, and can be removed once AUI styles have been removed from Confluence.
+          document.body.style.backgroundColor = '#fff';
+
+          // This keeps the content hidden until the sidebar is loaded to avoid jumps in the UI. This was previously
+          // on the fin-jank-ui.js but had to be moved here as we are deferring the resources
+          const head = document.head || document.querySelector('head');
+          const style = document.createElement('style');
+          const css =
+            '#main, #admin-content, #custom-content-container, .ap-servlet-placeholder { opacity: 0 };';
+
+          style.type = 'text/css';
+
+          if (style.styleSheet) {
+            style.styleSheet.cssText = css;
+          } else {
+            style.appendChild(document.createTextNode(css));
+          }
+
+          if (head) {
+            head.appendChild(style);
+          }
+        })();
+      </script>
+      <script src="./Search - Confluence_files/jquery-min.js"></script>
+      <script src="./Search - Confluence_files/standalone-navigation.3f76a57ab4f0e4b78931-v33.js"></script>
+      <!-- END-FRAGMENT standalone-navigation.html -->
+      <div id="header-precursor">
+        <div class="cell">
+
+        </div>
+      </div>
+      <!-- \#header -->
+
+      <div id="main" class=" aui-page-panel " style="transition: opacity 0.15s ease-in 0s; opacity: 1;">
+        <div class="connect-theme-background-cover"></div>
+
+        <header id="search-results-header" class="aui-page-header">
+          <img id="fake_mouse" src="" style="display:none;position:absolute;z-index:1000;" />
+          <div class="container">
+            <div class="row">
+              <div class="offset4 span4">
+                <div class="showOnHome">
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                    
+                </div>
+                <div class="row">
+                  <form id="search" action="https://domain.atlassian.net/wiki/dosearchsite.action" class="input-append">
+                    <input type="text" name="queryString" id="search_query" autocomplete="off">
+                    <button id="search_button" class="btn" type="button">Go!</button>
+
+                    <h5 id="search_url" style="text-decoration:underline;"></h5>
+                  </form>
+                </div>
+                <div class="showOnHome">
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script src="js/plugins.js"></script>
+          <script src="//code.jquery.com/jquery-2.0.0.min.js"></script>
+          <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+          <script src="js/vendor/jquery.form.js"></script>
+          <script src="js/vendor/underscore.string.min.js"></script>
+          <script src="js/vendor/purl.js"></script>
+          <script src="js/main.js"></script>
+          <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+              ga('create', 'UA-11272987-5', 'bboudreau.ca');
+              ga('send', 'pageview');
+            </script>
+        </header>
+
+        <div class="aui-page-panel-inner">
+          <div class="search-results-page-panel-nav">
+            <form id="filter-form" class="aui">
+              <nav class="aui-navgroup aui-navgroup-vertical">
+                <div class="aui-navgroup-inner">
+                  <div class="cql-container">
+                    <div class="cql-error-container"></div>
+                    <div class="cql-fields">
+                      <div class="cql-filter cql-field-contributor cql-type-user">
+                        <div class="cql-field-heading aui-nav-heading"><label for="cql-field-contributor-0">Contributor</label></div>
+                        <div class="cql-filter-field-input-container">
+                          <div class="select2-container select2-container-multi cql-field-input text autocomplete-multiusergroup aui-select2-container aui-has-avatar users-autocomplete"
+                            id="s2id_cql-field-contributor-0">
+                            <ul class="select2-choices" style="">
+                              <li class="select2-search-field"> <input type="text" autocomplete="off" autocorrect="off"
+                                  autocapitalize="off" spellcheck="false" class="select2-input" id="s2id_autogen1"
+                                  tabindex="0" style="width: 10px;"> </li>
+                            </ul>
+                            <div class="select2-drop select2-drop-multi select2-display-none aui-select2-drop aui-dropdown2 aui-style-default aui-has-avatar users-dropdown aui-layer"
+                              resolved="" aria-hidden="true">
+                              <ul class="select2-results"> </ul>
+                            </div>
+                          </div><input type="text" class="cql-field-input text select2-input autocomplete-multiusergroup select2-offscreen"
+                            id="cql-field-contributor-0" data-autocomplete-bound="true" tabindex="-1">
+                        </div>
+                      </div>
+                      <div class="cql-filter cql-field-space cql-type-space">
+                        <div class="cql-field-heading aui-nav-heading"><label for="cql-field-space-1">In
+                            space</label></div>
+                        <div class="cql-filter-field-input-container">
+                          <div class="select2-container select2-container-multi cql-field-input text aui-select2-container"
+                            id="s2id_cql-field-space-1" style="">
+                            <ul class="select2-choices" style="">
+                              <li class="select2-search-field"> <input type="text" autocomplete="off" autocorrect="off"
+                                  autocapitalize="off" spellcheck="false" class="select2-input select2-default" id="s2id_autogen2"
+                                  tabindex="0" style="width: 0px;">
+                              </li>
+                            </ul>
+                            <div class="select2-drop select2-drop-multi select2-display-none aui-select2-drop aui-dropdown2 aui-style-default aui-layer"
+                              resolved="" aria-hidden="true">
+                              <ul class="select2-results">
+                                <li class="select2-no-results">No matches found</li>
+                              </ul>
+                            </div>
+                          </div><input type="text" class="cql-field-input text select2-offscreen" id="cql-field-space-1"
+                            tabindex="-1"><span><input type="checkbox" value="true" id="search-filter-include-archived"
+                              name="includeArchivedSpaces"><label for="search-filter-include-archived">Search archived
+                              spaces</label></span>
+                        </div>
+                      </div>
+                      <div class="cql-filter cql-field-lastmodified cql-type-date">
+                        <div class="cql-field-heading aui-nav-heading"><label for="cql-field-lastmodified-2">Last
+                            modified</label></div>
+                        <div class="cql-filter-field-input-container">
+                          <div class="aui-navgroup-vertical">
+                            <ul class="aui-nav" resolved="">
+                              <li class="aui-nav-selected"><a data-value="">Any date</a></li>
+                              <li><a data-value="now(&#39;-1d&#39;)">Last 24 hours</a></li>
+                              <li><a data-value="now(&#39;-1w&#39;)">Last week</a></li>
+                              <li><a data-value="now(&#39;-1M&#39;)">Last month</a></li>
+                              <li><a data-value="now(&#39;-1y&#39;)">Last year</a></li>
+                              <li><a data-value="custom">Custom</a><span class="absolute-date-pickers" style="display: none;"><input
+                                    class="from-date-picker text" type="text" data-aui-dp-uuid="0" placeholder="From"><span>–</span><input
+                                    class="to-date-picker text" type="text" data-aui-dp-uuid="1" placeholder="To"></span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cql-filter cql-field-type cql-type-contentType">
+                        <div class="cql-field-heading aui-nav-heading"><label for="cql-field-type-3">Of
+                            type</label></div>
+                        <div class="cql-filter-field-input-container">
+                          <div class="aui-navgroup-vertical">
+                            <ul class="aui-nav" resolved="">
+                              <li class="aui-nav-selected"><a data-value="">All content</a></li>
+                              <li><a data-value="page">Pages</a></li>
+                              <li><a data-value="blogpost">Blog Posts</a></li>
+                              <li><a data-value="attachment">Attachments</a></li>
+                              <li><a data-value="space">Spaces</a></li>
+                              <li><a data-value="custom">Custom</a></li>
+                            </ul>
+                          </div>
+                          <div class="select2-container select2-container-multi cql-field-input text aui-select2-container"
+                            id="s2id_cql-field-type-3" style="display: none;">
+                            <ul class="select2-choices" style="">
+                              <li class="select2-search-field"> <input type="text" autocomplete="off" autocorrect="off"
+                                  autocapitalize="off" spellcheck="false" class="select2-input select2-default" id="s2id_autogen3"
+                                  tabindex="0" style="width: 0px;">
+                              </li>
+                            </ul>
+                            <div class="select2-drop select2-drop-multi select2-display-none aui-select2-drop aui-dropdown2 aui-style-default aui-layer"
+                              resolved="" aria-hidden="true">
+                              <ul class="select2-results">
+                                <li class="select2-no-results">No matches found</li>
+                              </ul>
+                            </div>
+                          </div><input type="text" class="cql-field-input text select2-offscreen" id="cql-field-type-3"
+                            tabindex="-1">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cql-add-filter-container"><button type="button" class="aui-button aui-button-link">Add
+                        a filter</button>
+                      <div class="input-wrapper hidden">
+                        <div class="select2-container aui-select2-container" id="s2id_autogen4"><a href="javascript:void(0)"
+                            onclick="return false;" class="select2-choice select2-default" tabindex="-1"> <span class="select2-chosen">Add
+                              a filter</span><abbr class="select2-search-choice-close"></abbr> <span class="select2-arrow"><b></b></span></a><input
+                            class="select2-focusser select2-offscreen" type="text" id="s2id_autogen5" tabindex="0">
+                          <div class="select2-drop select2-display-none aui-select2-drop aui-dropdown2 aui-style-default select2-with-searchbox aui-layer"
+                            resolved="" aria-hidden="true">
+                            <div class="select2-search"> <input type="text" autocomplete="off" autocorrect="off"
+                                autocapitalize="off" spellcheck="false" class="select2-input"> </div>
+                            <ul class="select2-results"> </ul>
+                          </div>
+                        </div><input class="select2-input select2-offscreen" type="text" tabindex="-1">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </form>
+          </div>
+
+          <section class="aui-page-panel-content  one-panel ">
+            <div class="search-results-wrapper">
+              <div class="search-blanket" style="display: none"></div>
+              <div class="search-results-container">
+                <div class="search-results-blank-state">
+                  <p><strong>Enter your search into the search bar above.</strong></p>
+                  <p>You can use the controls on the left to refine your search.</p>
+                </div>
+              </div>
+
+              <div class="pagination-container">
+              </div>
+            </div>
+            <br/><br/><br/>
+            <div class="step1" style="background-color:lightblue;height: 50px;width: 500px;display: none">
+                Step 1. Visit https://domain.atlassian.net/wiki/dosearchsite.action
+            </div>
+            <div class="step2" style="background-color:lightblue;height: 50px;width: 500px;display: none">
+                Step 2. Type search keyword
+            </div>
+            <div class="step3" style="background-color:lightblue;height: 50px;width: 500px;display: none">
+                Step 3. Click Go! button
+            </div>
+            <div class="step4" style="background-color:lightblue;height: 50px;width: 500px;display: none">
+                <b>That's it!</b>
+            </div>            
+          </section>
+
+
+        </div>
+
+      </div>
+      <!-- \#main -->
+    </div><!-- flex-flow: row wrap -->
+  </div><!-- display: flex -->
+
+  <span style="display:none;" id="confluence-server-performance">{"serverDuration": 82, "requestCorrelationId":
+    "0a597628974a87ae"}</span>
+
+</body>
+
 </html>
