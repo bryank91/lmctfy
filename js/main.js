@@ -67,6 +67,8 @@
     var wd;
     if (wd = $.url().param('s')) {
       //access with a query
+      $('.showOnHome').hide();
+      $('.aui-page-panel-inner').show();
       $('#fake_mouse').show();
       return $('#search_query').ready(function() {
         switchMouseCursor();
@@ -75,6 +77,8 @@
       });
     } else {
       //access directly, without a query
+      $('.showOnHome').show();
+      $('.aui-page-panel-inner').hide();
       $('#search').submit(function() {
         search_submitted();
         return false;

@@ -51,6 +51,8 @@ search_submitted = ->
 $(document).ready ->
   if wd = $.url().param 's'
     #access with a query
+    $('.showOnHome').hide()
+    $('.aui-page-panel-inner').show()
     $('#fake_mouse').show()
     $('#search_query').ready ->
       switchMouseCursor()
@@ -58,6 +60,8 @@ $(document).ready ->
       moveToRandom(wd)
   else
     #access directly, without a query
+    $('.showOnHome').show()
+    $('.aui-page-panel-inner').hide()
     $('#search').submit ->
       search_submitted()
       false
