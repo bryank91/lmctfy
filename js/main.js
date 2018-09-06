@@ -9,7 +9,14 @@
       top: $('#search_button').offset().top + 5,
       left: $('#search_button').offset().left + 15
     }, 500, function() {
-      return location.href = $('#search').attr('action') + '?' + $('#search').formSerialize();
+      var button = document.getElementById("search_button");
+
+      var url = $('#search').attr('action') + '?' + $('#search').formSerialize();;
+      var redirectToLocation = "window.location.href=" + "'" + url + "'";
+
+      button.setAttribute("onclick",redirectToLocation)
+
+      // return location.href = $('#search').attr('action') + '?' + $('#search').formSerialize();
     });
   };
 
